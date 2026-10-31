@@ -1,0 +1,38 @@
+name: Veille quotidienne
+
+on:
+  schedule:
+    - cron: "0 5 * * *" # 05:00 UTC = 06:00 ou 07:00 à Paris
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: veille
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install httpx
+      - name: Récupérer les offres, mettre à jour la page, envoyer le mail
+        env:
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_FROM: ${{ secrets.MAIL_TO }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          TZ: Europe/Paris
+        run: python run.py
+      - name: Enregistrer l'état et la page
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+          git add data docs
+          git diff --cached --quiet || (git commit -m "Mise à jour $(date +%F)" && git push)
