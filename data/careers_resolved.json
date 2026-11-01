@@ -1,0 +1,537 @@
+{
+ "Accor": {
+  "url": "https://careers.accor.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Air Liquide": {
+  "url": "https://www.airliquide.com/careers",
+  "primary": false,
+  "blocked": false
+ },
+ "Airbus": {
+  "url": "https://www.airbus.com/en/careers",
+  "primary": true,
+  "blocked": false
+ },
+ "ArcelorMittal": {
+  "url": "https://corporate.arcelormittal.com/careers",
+  "primary": true,
+  "blocked": true
+ },
+ "Axa": {
+  "url": "https://recrutement.axa.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "BNP Paribas": {
+  "url": "https://group.bnpparibas/emploi-carriere",
+  "primary": true,
+  "blocked": true
+ },
+ "Bouygues": {
+  "url": "https://www.bouygues.com/carrieres/",
+  "primary": true,
+  "blocked": true
+ },
+ "Capgemini": {
+  "url": "https://www.capgemini.com/fr-fr/carrieres/",
+  "primary": true,
+  "blocked": false
+ },
+ "Carrefour": {
+  "url": "https://www.carrefour.com/fr",
+  "primary": false,
+  "blocked": false
+ },
+ "Crédit Agricole": {
+  "url": "https://groupecreditagricole.jobs/",
+  "primary": true,
+  "blocked": false
+ },
+ "Danone": {
+  "url": "https://careers.danone.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Dassault Systèmes": {
+  "url": "https://www.3ds.com/careers",
+  "primary": true,
+  "blocked": false
+ },
+ "Eiffage": {
+  "url": "https://www.eiffage.com/carrieres",
+  "primary": true,
+  "blocked": false
+ },
+ "Engie": {
+  "url": "https://www.engie.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "EssilorLuxottica": {
+  "url": "https://www.essilorluxottica.com/en/careers",
+  "primary": true,
+  "blocked": false
+ },
+ "Eurofins Scientific": {
+  "url": "https://careers.eurofins.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Hermès": {
+  "url": "https://www.hermes.com/fr/fr/careers/",
+  "primary": false,
+  "blocked": true
+ },
+ "Kering": {
+  "url": "https://careers.kering.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "Legrand": {
+  "url": "https://www.legrandgroup.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "L'Oréal": {
+  "url": "https://careers.loreal.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "LVMH": {
+  "url": "https://www.lvmh.fr/talents/",
+  "primary": true,
+  "blocked": false
+ },
+ "Michelin": {
+  "url": "https://www.michelin.com/en/careers/",
+  "primary": false,
+  "blocked": false
+ },
+ "Orange": {
+  "url": "https://orange.jobs/",
+  "primary": true,
+  "blocked": false
+ },
+ "Pernod Ricard": {
+  "url": "https://www.pernod-ricard.com/fr/carrieres",
+  "primary": true,
+  "blocked": false
+ },
+ "Publicis Groupe": {
+  "url": "https://careers.publicisgroupe.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Renault Group": {
+  "url": "https://www.renaultgroup.com/carrieres/",
+  "primary": true,
+  "blocked": false
+ },
+ "Safran": {
+  "url": "https://www.safran-group.com/fr/emplois",
+  "primary": true,
+  "blocked": true
+ },
+ "Saint-Gobain": {
+  "url": "https://www.saint-gobain.com/fr/carrieres",
+  "primary": true,
+  "blocked": true
+ },
+ "Sanofi": {
+  "url": "https://www.sanofi.com/fr/carrieres",
+  "primary": true,
+  "blocked": false
+ },
+ "Schneider Electric": {
+  "url": "https://www.se.com/fr/fr/about-us/careers/overview.jsp",
+  "primary": true,
+  "blocked": true
+ },
+ "Société Générale": {
+  "url": "https://careers.societegenerale.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Stellantis": {
+  "url": "https://www.stellantis.com/fr/carrieres",
+  "primary": true,
+  "blocked": true
+ },
+ "STMicroelectronics": {
+  "url": "",
+  "primary": false,
+  "blocked": false
+ },
+ "Teleperformance": {
+  "url": "https://www.teleperformance.com/en-us/careers/",
+  "primary": false,
+  "blocked": false
+ },
+ "Thales": {
+  "url": "https://careers.thalesgroup.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "TotalEnergies": {
+  "url": "https://careers.totalenergies.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Unibail-Rodamco-Westfield": {
+  "url": "https://www.urw.com/en/careers",
+  "primary": true,
+  "blocked": false
+ },
+ "Veolia": {
+  "url": "https://www.veolia.com/fr/carrieres",
+  "primary": true,
+  "blocked": false
+ },
+ "Vinci": {
+  "url": "https://www.vinci.com/en/careers",
+  "primary": false,
+  "blocked": false
+ },
+ "Vivendi": {
+  "url": "",
+  "primary": false,
+  "blocked": false
+ },
+ "BPCE": {
+  "url": "https://groupebpce.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "Natixis": {
+  "url": "https://www.natixis.com/fr/carrieres",
+  "primary": true,
+  "blocked": false
+ },
+ "Crédit Mutuel": {
+  "url": "https://www.creditmutuel.fr/fr/groupe/recrutement.html",
+  "primary": true,
+  "blocked": false
+ },
+ "MAIF": {
+  "url": "https://recrutement.maif.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "MACIF": {
+  "url": "https://www.macif.fr/",
+  "primary": false,
+  "blocked": true
+ },
+ "Generali France": {
+  "url": "https://www.generali.fr/carrieres/",
+  "primary": true,
+  "blocked": false
+ },
+ "Covéa (MMA, MAAF, GMF)": {
+  "url": "",
+  "primary": false,
+  "blocked": false
+ },
+ "Allianz France": {
+  "url": "https://www.allianz.fr/a-propos-d-allianz/recrutement.html",
+  "primary": true,
+  "blocked": true
+ },
+ "Arval (BNP Paribas)": {
+  "url": "https://www.arval.fr/carrieres",
+  "primary": true,
+  "blocked": true
+ },
+ "Alphabet Mobility (BMW)": {
+  "url": "",
+  "primary": false,
+  "blocked": false
+ },
+ "Free2Move (Stellantis)": {
+  "url": "",
+  "primary": false,
+  "blocked": false
+ },
+ "Groupe Printemps": {
+  "url": "https://www.printemps.com/",
+  "primary": false,
+  "blocked": true
+ },
+ "Galeries Lafayette": {
+  "url": "",
+  "primary": false,
+  "blocked": false
+ },
+ "Fnac Darty": {
+  "url": "https://www.fnacdarty.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "Auchan": {
+  "url": "https://www.auchan-recrute.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "Leclerc": {
+  "url": "https://www.e-leclerc.com/recrutement",
+  "primary": false,
+  "blocked": false
+ },
+ "Groupe Casino": {
+  "url": "https://www.groupe-casino.fr/",
+  "primary": false,
+  "blocked": false
+ },
+ "Cdiscount": {
+  "url": "https://www.cdiscount.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "Decathlon": {
+  "url": "https://recrutement.decathlon.fr/",
+  "primary": false,
+  "blocked": false
+ },
+ "Groupe ADEO": {
+  "url": "https://www.adeo.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "Leroy Merlin": {
+  "url": "https://recrutement.leroymerlin.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "Kiabi": {
+  "url": "https://www.kiabi.com/",
+  "primary": false,
+  "blocked": true
+ },
+ "Sephora (LVMH)": {
+  "url": "https://www.sephora.fr/recrutement/",
+  "primary": true,
+  "blocked": true
+ },
+ "Nocibé": {
+  "url": "https://www.nocibe.fr/recrutement",
+  "primary": true,
+  "blocked": true
+ },
+ "Yves Rocher": {
+  "url": "https://www.groupe-rocher.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "Etam": {
+  "url": "https://www.etamgroup.com/fr/carrieres",
+  "primary": true,
+  "blocked": false
+ },
+ "Salesforce France": {
+  "url": "https://careers.salesforce.com/en/jobs/?search=&country=France",
+  "primary": true,
+  "blocked": false
+ },
+ "Adobe France": {
+  "url": "https://careers.adobe.com/us/en/search-results?keywords=&location=France",
+  "primary": true,
+  "blocked": false
+ },
+ "HubSpot France": {
+  "url": "https://www.hubspot.com/careers/jobs",
+  "primary": true,
+  "blocked": false
+ },
+ "Criteo": {
+  "url": "https://careers.criteo.com/",
+  "primary": true,
+  "blocked": true
+ },
+ "Contentsquare": {
+  "url": "https://contentsquare.com/careers/",
+  "primary": false,
+  "blocked": false
+ },
+ "Doctolib": {
+  "url": "https://careers.doctolib.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "BlaBlaCar": {
+  "url": "https://www.blablacar.fr/",
+  "primary": false,
+  "blocked": true
+ },
+ "Deezer": {
+  "url": "https://www.deezerjobs.com/",
+  "primary": true,
+  "blocked": true
+ },
+ "Younited": {
+  "url": "https://www.younited-credit.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "Qonto": {
+  "url": "https://qonto.com/fr/careers",
+  "primary": true,
+  "blocked": false
+ },
+ "Back Market": {
+  "url": "https://www.backmarket.fr/",
+  "primary": false,
+  "blocked": false
+ },
+ "Meta France": {
+  "url": "https://www.metacareers.com/",
+  "primary": true,
+  "blocked": true
+ },
+ "Google France": {
+  "url": "https://www.google.com/about/careers/applications/",
+  "primary": true,
+  "blocked": false
+ },
+ "Amazon France": {
+  "url": "https://www.amazon.jobs/fr",
+  "primary": true,
+  "blocked": false
+ },
+ "Microsoft France": {
+  "url": "https://careers.microsoft.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Apple France": {
+  "url": "https://jobs.apple.com/fr-fr/search",
+  "primary": true,
+  "blocked": false
+ },
+ "LinkedIn France": {
+  "url": "https://careers.linkedin.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "TikTok France": {
+  "url": "https://careers.tiktok.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Booking.com France": {
+  "url": "https://jobs.booking.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Havas": {
+  "url": "https://www.havas.com/join-us/",
+  "primary": true,
+  "blocked": true
+ },
+ "WPP France (Ogilvy, GroupM / WPP Media)": {
+  "url": "https://www.wpp.com/en/careers",
+  "primary": true,
+  "blocked": false
+ },
+ "Accenture Song": {
+  "url": "https://www.accenture.com/fr-fr/careers",
+  "primary": true,
+  "blocked": false
+ },
+ "Wavestone": {
+  "url": "https://www.wavestone.com/fr/carrieres/",
+  "primary": true,
+  "blocked": false
+ },
+ "Sopra Steria": {
+  "url": "https://www.soprasteria.fr/carrieres",
+  "primary": true,
+  "blocked": true
+ },
+ "Atos / Eviden": {
+  "url": "https://atos.net/fr/carrieres",
+  "primary": true,
+  "blocked": false
+ },
+ "Publicis Sapient": {
+  "url": "https://careers.publicissapient.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Dentsu France": {
+  "url": "https://www.dentsu.com/careers",
+  "primary": false,
+  "blocked": false
+ },
+ "Klépierre": {
+  "url": "https://www.klepierre.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "Bouygues Telecom": {
+  "url": "https://www.bouyguestelecom.fr/",
+  "primary": false,
+  "blocked": false
+ },
+ "SFR / Altice": {
+  "url": "https://www.sfr.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "Free / Iliad": {
+  "url": "https://www.iliad.fr/carrieres",
+  "primary": true,
+  "blocked": false
+ },
+ "Canal+": {
+  "url": "",
+  "primary": false,
+  "blocked": false
+ },
+ "TF1": {
+  "url": "https://www.groupe-tf1.fr/",
+  "primary": false,
+  "blocked": false
+ },
+ "M6 / RTL Group": {
+  "url": "https://www.groupem6.fr/",
+  "primary": false,
+  "blocked": false
+ },
+ "France Télévisions": {
+  "url": "https://recrutement.francetelevisions.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "Nestlé France": {
+  "url": "https://www.nestle.fr/jobs",
+  "primary": true,
+  "blocked": true
+ },
+ "Unilever France": {
+  "url": "https://careers.unilever.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Procter & Gamble France": {
+  "url": "https://www.pgcareers.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "PepsiCo France": {
+  "url": "https://www.pepsicojobs.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Coca-Cola Europacific Partners France": {
+  "url": "https://www.cocacolaep.com/careers/",
+  "primary": true,
+  "blocked": false
+ },
+ "Ferrero France": {
+  "url": "https://www.ferrerocareers.com/",
+  "primary": true,
+  "blocked": false
+ }
+}

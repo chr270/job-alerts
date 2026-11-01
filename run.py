@@ -14,6 +14,7 @@ from datetime import date, datetime, timedelta
 from email.message import EmailMessage
 from pathlib import Path
 
+import carrieres_page
 import config
 import llm
 import page
@@ -154,6 +155,8 @@ def main() -> int:
     PAGE_FILE.write_text(page.build(list(store.values()), today, config.NEW_DAYS), encoding="utf-8")
 
     pertinent = [o for o in new if o["score"] >= config.MIN_MAIL_SCORE]
+    (PAGE_FILE.parent / "entreprises.html").write_text(carrieres_page.build_html(today), encoding="utf-8")
+
     print(
         f"Offres en archive : {len(store)} | écartées (hors cible) : {dropped} | nouvelles : {len(new)} "
         f"(pertinentes : {len(pertinent)}) | relues par Claude : {len(reviews)} | première synchro : {first_run}"

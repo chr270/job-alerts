@@ -1,0 +1,548 @@
+{
+ "https://atos.net/fr/carrieres": {
+  "status": 200,
+  "final": "https://atos.net/fr/rejoignez-nous",
+  "ok": true
+ },
+ "https://careers.accor.com/": {
+  "status": 200,
+  "final": "https://careers.accor.com/",
+  "ok": true
+ },
+ "https://careers.adobe.com/us/en/search-results?keywords=&location=France": {
+  "status": 200,
+  "final": "https://careers.adobe.com/us/en/search-results?keywords=&location=France",
+  "ok": true
+ },
+ "https://careers.blablacar.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://careers.contentsquare.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://careers.criteo.com/": {
+  "status": 403,
+  "final": "https://careers.criteo.com/",
+  "ok": true
+ },
+ "https://careers.danone.com/": {
+  "status": 200,
+  "final": "https://careers.danone.com/en-global/home.html",
+  "ok": true
+ },
+ "https://careers.decathlon.com/fr": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://careers.doctolib.com/": {
+  "status": 200,
+  "final": "https://careers.doctolib.com/",
+  "ok": true
+ },
+ "https://careers.engie.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://careers.eurofins.com/": {
+  "status": 200,
+  "final": "https://careers.eurofins.com/",
+  "ok": true
+ },
+ "https://careers.hermes.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://careers.legrandgroup.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://careers.linkedin.com/": {
+  "status": 200,
+  "final": "https://careers.linkedin.com/",
+  "ok": true
+ },
+ "https://careers.loreal.com/": {
+  "status": 200,
+  "final": "https://careers.loreal.com/en",
+  "ok": true
+ },
+ "https://careers.microsoft.com/": {
+  "status": 200,
+  "final": "https://careers.microsoft.com/v2/global/en/home.html",
+  "ok": true
+ },
+ "https://careers.publicisgroupe.com/": {
+  "status": 200,
+  "final": "https://careers.publicisgroupe.com/jobs",
+  "ok": true
+ },
+ "https://careers.publicissapient.com/": {
+  "status": 200,
+  "final": "https://careers.publicissapient.com/",
+  "ok": true
+ },
+ "https://careers.salesforce.com/en/jobs/?search=&country=France": {
+  "status": 200,
+  "final": "https://www.salesforce.com/company/careers/jobs/?search=&country=France&bc=OTH",
+  "ok": true
+ },
+ "https://careers.societegenerale.com/": {
+  "status": 200,
+  "final": "https://careers.societegenerale.com/",
+  "ok": true
+ },
+ "https://careers.thalesgroup.com/": {
+  "status": 200,
+  "final": "https://careers.thalesgroup.com/global/en",
+  "ok": true
+ },
+ "https://careers.tiktok.com/": {
+  "status": 200,
+  "final": "https://lifeattiktok.com/",
+  "ok": true
+ },
+ "https://careers.totalenergies.com/": {
+  "status": 200,
+  "final": "https://careers.totalenergies.com/en",
+  "ok": true
+ },
+ "https://careers.unilever.com/": {
+  "status": 200,
+  "final": "https://careers.unilever.com/en",
+  "ok": true
+ },
+ "https://corporate.arcelormittal.com/careers": {
+  "status": 403,
+  "final": "https://corporate.arcelormittal.com/careers",
+  "ok": true
+ },
+ "https://group.bnpparibas/emploi-carriere": {
+  "status": 403,
+  "final": "https://group.bnpparibas/emploi-carriere",
+  "ok": true
+ },
+ "https://groupebpce.com/carrieres/": {
+  "status": 404,
+  "final": "https://www.groupebpce.com/carrieres/",
+  "ok": false
+ },
+ "https://groupecreditagricole.jobs/": {
+  "status": 200,
+  "final": "https://groupecreditagricole.jobs/",
+  "ok": true
+ },
+ "https://jobs.apple.com/fr-fr/search": {
+  "status": 200,
+  "final": "https://jobs.apple.com/fr-fr/search?location=france-FRAC",
+  "ok": true
+ },
+ "https://jobs.booking.com/": {
+  "status": 200,
+  "final": "https://jobs.booking.com/booking/jobs",
+  "ok": true
+ },
+ "https://jobs.teleperformance.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://orange.jobs/": {
+  "status": 200,
+  "final": "https://orange.jobs/gb/en",
+  "ok": true
+ },
+ "https://qonto.com/fr/careers": {
+  "status": 200,
+  "final": "https://qonto.com/fr/careers",
+  "ok": true
+ },
+ "https://recrutement.axa.fr/": {
+  "status": 200,
+  "final": "https://recrutement.axa.fr/",
+  "ok": true
+ },
+ "https://recrutement.bouyguestelecom.fr/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://recrutement.cdiscount.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://recrutement.covea.eu/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://recrutement.e-leclerc.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://recrutement.francetelevisions.fr/": {
+  "status": 200,
+  "final": "https://recrutement.francetelevisions.fr/",
+  "ok": true
+ },
+ "https://recrutement.galerieslafayette.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://recrutement.groupe-tf1.fr/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://recrutement.kiabi.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://recrutement.leroymerlin.fr/": {
+  "status": 200,
+  "final": "https://recrute.leroymerlin.fr/",
+  "ok": true
+ },
+ "https://recrutement.macif.fr/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://recrutement.maif.fr/": {
+  "status": 200,
+  "final": "https://recrutement.maif.fr/accueil.aspx?LCID=1036",
+  "ok": true
+ },
+ "https://recrutement.sfr.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectTimeout"
+ },
+ "https://recrutement.yves-rocher.com/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://www.3ds.com/careers": {
+  "status": 200,
+  "final": "https://www.3ds.com/careers",
+  "ok": true
+ },
+ "https://www.accenture.com/fr-fr/careers": {
+  "status": 200,
+  "final": "https://www.accenture.com/fr-fr/careers",
+  "ok": true
+ },
+ "https://www.adeo.com/carrieres/": {
+  "status": 404,
+  "final": "https://www.adeo.com/carrieres/",
+  "ok": false
+ },
+ "https://www.airbus.com/en/careers": {
+  "status": 200,
+  "final": "https://www.airbus.com/en/careers",
+  "ok": true
+ },
+ "https://www.airliquide.com/fr/groupe/carrieres": {
+  "status": 404,
+  "final": "https://www.airliquide.com/fr/groupe/carrieres",
+  "ok": false
+ },
+ "https://www.allianz.fr/a-propos-d-allianz/recrutement.html": {
+  "status": 403,
+  "final": "https://www.allianz.fr/a-propos-d-allianz/recrutement.html",
+  "ok": true
+ },
+ "https://www.amazon.jobs/fr": {
+  "status": 200,
+  "final": "https://www.amazon.jobs/fr",
+  "ok": true
+ },
+ "https://www.arval.fr/carrieres": {
+  "status": 403,
+  "final": "https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/arval/france",
+  "ok": true
+ },
+ "https://www.auchan-recrute.fr/": {
+  "status": 200,
+  "final": "https://www.auchan-recrute.fr/",
+  "ok": true
+ },
+ "https://www.backmarket.com/en-fr/careers": {
+  "status": 404,
+  "final": "https://www.backmarket.com/en-us/en-fr/careers",
+  "ok": false
+ },
+ "https://www.bouygues.com/carrieres/": {
+  "status": 403,
+  "final": "https://www.bouygues.com/carrieres/",
+  "ok": true
+ },
+ "https://www.capgemini.com/fr-fr/carrieres/": {
+  "status": 200,
+  "final": "https://www.capgemini.com/fr-fr/carrieres/",
+  "ok": true
+ },
+ "https://www.carrefour.com/fr/groupe/carrieres": {
+  "status": 404,
+  "final": "https://www.carrefour.com/fr/groupe/carrieres",
+  "ok": false
+ },
+ "https://www.cocacolaep.com/careers/": {
+  "status": 200,
+  "final": "https://www.cocacolaep.com/company/careers/",
+  "ok": true
+ },
+ "https://www.creditmutuel.fr/fr/groupe/recrutement.html": {
+  "status": 200,
+  "final": "https://recrutement.creditmutuel.fr/fr/index.html",
+  "ok": true
+ },
+ "https://www.deezerjobs.com/": {
+  "status": 403,
+  "final": "https://www.deezerjobs.com/",
+  "ok": true
+ },
+ "https://www.dentsu.com/fr/fr/careers": {
+  "status": 404,
+  "final": "https://www.dentsu.com/fr/fr/careers",
+  "ok": false
+ },
+ "https://www.eiffage.com/carrieres": {
+  "status": 200,
+  "final": "https://www.eiffage.com/carrieres",
+  "ok": true
+ },
+ "https://www.essilorluxottica.com/en/careers": {
+  "status": 200,
+  "final": "https://www.essilorluxottica.com/en/careers/",
+  "ok": true
+ },
+ "https://www.etamgroup.com/fr/carrieres": {
+  "status": 200,
+  "final": "https://www.etamgroup.com/fr/carrieres",
+  "ok": true
+ },
+ "https://www.ferrerocareers.com/": {
+  "status": 200,
+  "final": "https://www.ferrerocareers.com/fr/fr/",
+  "ok": true
+ },
+ "https://www.fnacdarty.com/carrieres/": {
+  "status": 404,
+  "final": "https://www.fnacdarty.com/carrieres/",
+  "ok": false
+ },
+ "https://www.generali.fr/carrieres/": {
+  "status": 200,
+  "final": "https://www.generali.fr/institutionnel/",
+  "ok": true
+ },
+ "https://www.google.com/about/careers/applications/": {
+  "status": 200,
+  "final": "https://www.google.com/about/careers/applications/?hl=en_US",
+  "ok": true
+ },
+ "https://www.groupe-casino.fr/carrieres/": {
+  "status": 404,
+  "final": "https://www.plesio.fr/carrieres/",
+  "ok": false
+ },
+ "https://www.groupecanalplus.com/fr/carrieres/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://www.groupem6.fr/carrieres/": {
+  "status": 404,
+  "final": "https://www.groupem6.fr/fr/carrieres/",
+  "ok": false
+ },
+ "https://www.groupeprintemps.com/fr/carrieres": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://www.havas.com/join-us/": {
+  "status": 403,
+  "final": "https://www.havas.com/join-us/",
+  "ok": true
+ },
+ "https://www.hubspot.com/careers/jobs": {
+  "status": 200,
+  "final": "https://www.hubspot.com/careers/jobs",
+  "ok": true
+ },
+ "https://www.iliad.fr/carrieres": {
+  "status": 200,
+  "final": "https://www.iliad.fr/carrieres",
+  "ok": true
+ },
+ "https://www.kering.com/fr/talents/": {
+  "status": 404,
+  "final": "https://www.kering.com/fr/talents/",
+  "ok": false
+ },
+ "https://www.klepierre.com/fr/carrieres": {
+  "status": 404,
+  "final": "https://www.klepierre.com/fr/carrieres",
+  "ok": false
+ },
+ "https://www.lvmh.fr/talents/": {
+  "status": 200,
+  "final": "https://www.lvmh.com/fr/nous-rejoindre/galerie-des-talents",
+  "ok": true
+ },
+ "https://www.metacareers.com/": {
+  "status": 400,
+  "final": "https://www.metacareers.com/",
+  "ok": false
+ },
+ "https://www.michelin.com/carrieres": {
+  "status": 404,
+  "final": "https://www.michelin.com/carrieres",
+  "ok": false
+ },
+ "https://www.natixis.com/fr/carrieres": {
+  "status": 200,
+  "final": "https://natixis.groupebpce.com/page-404/?lang=fr",
+  "ok": true
+ },
+ "https://www.nestle.fr/jobs": {
+  "status": 403,
+  "final": "https://www.nestle.fr/jobs",
+  "ok": true
+ },
+ "https://www.nocibe.fr/recrutement": {
+  "status": 400,
+  "final": "https://www.nocibe.fr/recrutement",
+  "ok": false
+ },
+ "https://www.pepsicojobs.com/": {
+  "status": 200,
+  "final": "https://www.pepsicojobs.com/main/",
+  "ok": true
+ },
+ "https://www.pernod-ricard.com/fr/carrieres": {
+  "status": 200,
+  "final": "https://www.pernod-ricard.com/fr/carrieres",
+  "ok": true
+ },
+ "https://www.pgcareers.com/": {
+  "status": 200,
+  "final": "https://www.pgcareers.com/eu/en",
+  "ok": true
+ },
+ "https://www.renaultgroup.com/carrieres/": {
+  "status": 200,
+  "final": "https://www.renaultgroup.com/carrieres-renault/",
+  "ok": true
+ },
+ "https://www.safran-group.com/fr/emplois": {
+  "status": 403,
+  "final": "https://www.safran-group.com/fr/emplois",
+  "ok": true
+ },
+ "https://www.saint-gobain.com/fr/carrieres": {
+  "status": 403,
+  "final": "https://www.saint-gobain.com/fr/carrieres",
+  "ok": true
+ },
+ "https://www.sanofi.com/fr/carrieres": {
+  "status": 200,
+  "final": "https://jobs.sanofi.com/fr",
+  "ok": true
+ },
+ "https://www.se.com/fr/fr/about-us/careers/overview.jsp": {
+  "status": 403,
+  "final": "https://www.se.com/fr/fr/about-us/careers/overview.jsp",
+  "ok": true
+ },
+ "https://www.sephora.fr/recrutement/": {
+  "status": 403,
+  "final": "https://www.sephora.fr/recrutement/",
+  "ok": true
+ },
+ "https://www.soprasteria.fr/carrieres": {
+  "status": 502,
+  "final": "https://www.soprasteria.fr/carrieres",
+  "ok": false
+ },
+ "https://www.st.com/content/st_com/en/about/careers-at-st.html": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ReadTimeout"
+ },
+ "https://www.stellantis.com/fr/carrieres": {
+  "status": 403,
+  "final": "https://www.stellantis.com/fr/carrieres",
+  "ok": true
+ },
+ "https://www.urw.com/en/careers": {
+  "status": 200,
+  "final": "https://www.urw.com/join-us",
+  "ok": true
+ },
+ "https://www.veolia.com/fr/carrieres": {
+  "status": 200,
+  "final": "https://www.veolia.com/fr/carrieres",
+  "ok": true
+ },
+ "https://www.vinci.com/fr/carrieres": {
+  "status": 404,
+  "final": "https://www.vinci.com/fr/carrieres",
+  "ok": false
+ },
+ "https://www.vivendi.com/talents/": {
+  "status": null,
+  "final": "",
+  "ok": false,
+  "error": "ConnectError"
+ },
+ "https://www.wavestone.com/fr/carrieres/": {
+  "status": 200,
+  "final": "https://www.wavestone.com/fr/carrieres/",
+  "ok": true
+ },
+ "https://www.wpp.com/en/careers": {
+  "status": 200,
+  "final": "https://www.wpp.com/en/careers",
+  "ok": true
+ },
+ "https://www.younited.com/careers": {
+  "status": 404,
+  "final": "https://younited.com/careers",
+  "ok": false
+ }
+}
