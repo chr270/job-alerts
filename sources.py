@@ -63,6 +63,10 @@ def fetch_france_travail() -> list[dict]:
                         "published": (o.get("dateCreation") or "")[:10],
                         "url": f"https://candidat.francetravail.fr/offres/recherche/detail/{o['id']}",
                         "snippet": (o.get("description") or "")[:300].replace("\n", " "),
+                        "text": (o.get("description") or "")
+                        + " "
+                        + " ".join(c.get("libelle", "") for c in (o.get("competences") or [])),
+                        "experience": o.get("experienceLibelle", ""),
                     }
                 if len(batch) < end - start + 1:
                     break
@@ -71,6 +75,13 @@ def fetch_france_travail() -> list[dict]:
             print(f"[France Travail] {query!r} -> {len(offers)} offres cumulées")
             time.sleep(0.4)
     return list(offers.values())
+
+
+def _loc(v) -> str:
+    """Champ WTTJ parfois sous forme {"fr": "...", "en": "..."}."""
+    if isinstance(v, dict):
+        return _loc(v.get("fr") or next(iter(v.values()), ""))
+    return v if isinstance(v, str) else ""
 
 
 def fetch_wttj() -> list[dict]:
@@ -101,6 +112,8 @@ def fetch_wttj() -> list[dict]:
                     "published": (row["published_at"] or "")[:10],
                     "url": row["job_url"],
                     "snippet": row["description"][:300],
+                    "text": w.strip_html(h.get("profile", "")) + " " + _loc(h.get("profession_name")),
+                    "experience": "",
                 }
     return list(offers.values())
 

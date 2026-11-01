@@ -15,7 +15,9 @@ from email.message import EmailMessage
 from pathlib import Path
 
 import config
+import llm
 import page
+import scoring
 import sources
 
 ROOT = Path(__file__).parent
@@ -41,8 +43,8 @@ def safe(fetch, name: str) -> list[dict] | None:
         return None
 
 
-def build_mail(new: list[dict], total: int, first_run: bool) -> EmailMessage:
-    new = sorted(new, key=lambda o: o.get("published", ""), reverse=True)
+def build_mail(new: list[dict], total: int, first_run: bool, others: int = 0) -> EmailMessage:
+    new = sorted(new, key=lambda o: (o.get("score", 0), o.get("published", "")), reverse=True)
     shown = new[:60]
     title = (
         f"Veille emploi : {total} offres suivies (première synchronisation)"
@@ -51,13 +53,16 @@ def build_mail(new: list[dict], total: int, first_run: bool) -> EmailMessage:
     )
     rows, text = [], [title, "", f"Toutes les offres : {config.PAGE_URL}", ""]
     for o in shown:
-        meta = " · ".join(x for x in [o["company"], o["location"], o["contract"], o["source"]] if x)
+        meta = " · ".join(x for x in [f"{o.get('score', 0)}/100", o["company"], o["location"], o["contract"], o["source"]] if x)
+        if o.get("note"):
+            meta += f" — {o['note']}"
         rows.append(
             f'<li style="margin-bottom:10px"><a href="{html.escape(o["url"])}"><b>{html.escape(o["title"])}</b></a>'
             f'<br><span style="color:#667085">{html.escape(meta)}</span></li>'
         )
         text.append(f"- {o['title']} | {meta}\n  {o['url']}")
-    more = f"<p>… et {len(new) - len(shown)} autres sur la page.</p>" if len(new) > len(shown) else ""
+    rest = (len(new) - len(shown)) + others
+    more = f"<p>… et {rest} autres offres moins pertinentes, sur la page.</p>" if rest > 0 else ""
     body = (
         f'<h2 style="margin:0 0 8px">{html.escape(title)}</h2>'
         f'<p><a href="{config.PAGE_URL}">Ouvrir la page avec toutes les offres</a></p>'
@@ -94,38 +99,66 @@ def main() -> int:
         print("Aucune source disponible, abandon.", file=sys.stderr)
         return 1
 
-    fetched = (ft or []) + (wt or [])
+    # 1) Notation de chaque offre (titre + texte) ; on écarte le hors-cible
+    fetched, dropped = [], 0
+    for o in (ft or []) + (wt or []):
+        if scoring.excluded(o["title"], o.get("text", ""), o.get("contract", "")):
+            dropped += 1
+            continue
+        s = scoring.score(o["title"], o.get("text", ""), o.get("experience", ""))
+        if s["score"] < config.MIN_STORE_SCORE:
+            dropped += 1
+            continue
+        o.update(rule_score=s["score"], keywords=s["keywords"], years=s["years"])
+        fetched.append(o)
+
+    # 2) Lecture par Claude (si clé API) des offres prometteuses pas encore relues
+    todo = [
+        o for o in fetched
+        if o["rule_score"] >= 45 and not (store.get(o["id"]) or {}).get("ai") and o.get("text")
+    ]
+    todo.sort(key=lambda o: o["rule_score"], reverse=True)
+    reviews = llm.review(todo)
+
+    # 3) Fusion avec l'archive
     new = []
     for o in fetched:
         old = store.get(o["id"])
-        if old:
-            old.update({**o, "first_seen": old["first_seen"]})
-            old["last_seen"] = today
-        else:
-            o["first_seen"] = o["last_seen"] = today
-            store[o["id"]] = o
+        rv = reviews.get(o["id"]) or ({"ai": old.get("ai"), "note": old.get("note")} if old and old.get("ai") else None)
+        o["score"] = round(0.4 * o["rule_score"] + 0.6 * rv["ai"]) if rv else o["rule_score"]
+        o["ai"], o["note"] = (rv["ai"], rv["note"]) if rv else (None, "")
+        o.pop("text", None)
+        o.pop("experience", None)
+        is_new = old is None
+        o["first_seen"] = old["first_seen"] if old else today
+        o["last_seen"] = today
+        store[o["id"]] = o
+        if is_new:
             new.append(o)
 
-    # Retire les offres qu'on ne voit plus depuis KEEP_DAYS jours
+    # Anciennes entrées jamais notées : on les retire ; archive : retrait après KEEP_DAYS sans être revue
     limit = (datetime.now() - timedelta(days=config.KEEP_DAYS)).date().isoformat()
-    store = {k: v for k, v in store.items() if v["last_seen"] >= limit}
+    store = {k: v for k, v in store.items() if "score" in v and v["last_seen"] >= limit}
 
     STATE.parent.mkdir(parents=True, exist_ok=True)
     STATE.write_text(json.dumps(store, ensure_ascii=False, indent=0), encoding="utf-8")
     PAGE_FILE.parent.mkdir(parents=True, exist_ok=True)
     PAGE_FILE.write_text(page.build(list(store.values()), today, config.NEW_DAYS), encoding="utf-8")
 
-    print(f"Offres suivies : {len(store)} | nouvelles : {len(new)} | première synchro : {first_run}")
+    pertinent = [o for o in new if o["score"] >= config.MIN_MAIL_SCORE]
+    print(
+        f"Offres en archive : {len(store)} | écartées (hors cible) : {dropped} | nouvelles : {len(new)} "
+        f"(pertinentes : {len(pertinent)}) | relues par Claude : {len(reviews)} | première synchro : {first_run}"
+    )
     failed = [n for n, r in (("France Travail", ft), ("WTTJ", wt)) if r is None]
     if failed:
         print(f"Sources en échec : {failed}", file=sys.stderr)
 
-    to_mail = list(store.values()) if first_run else new
+    to_mail = sorted(store.values(), key=lambda o: o["score"], reverse=True)[:25] if first_run else pertinent
     if to_mail and not args.no_mail:
         if "GMAIL_APP_PASSWORD" in os.environ and "MAIL_TO" in os.environ:
-            if first_run:  # première synchro : on n'envoie que les plus récentes
-                to_mail = sorted(to_mail, key=lambda o: o.get("published", ""), reverse=True)[:25]
-            send(build_mail(to_mail, len(store), first_run))
+            others = 0 if first_run else len(new) - len(pertinent)
+            send(build_mail(to_mail, len(store), first_run, others))
             print("Mail envoyé.")
         else:
             print("Mail non envoyé : GMAIL_APP_PASSWORD / MAIL_TO absents.")

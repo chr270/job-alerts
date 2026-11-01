@@ -5,13 +5,16 @@ FT_QUERIES = [
     "marketing automation",
     "CRM",
     "Salesforce",
+    "emailing",
     "marketing digital",
-    "chef de projet CRM",
     "traffic manager",
+    "acquisition digitale",
+    "SEO",
     "growth marketing",
     "MarTech",
-    "acquisition digitale",
-    "SFMC",
+    "e-commerce",
+    "chef de projet digital",
+    "communication digitale",
 ]
 FT_REGION = "11"  # 11 = Île-de-France
 FT_MAX_PER_QUERY = 450
@@ -24,14 +27,22 @@ WTTJ_QUERIES = [
     "marketing automation",
     "marketing digital",
     "MarTech",
-    "data marketing",
+    "traffic manager",
+    "acquisition digitale",
+    "SEO",
+    "emailing",
     "growth marketing",
 ]
 WTTJ_STATE = "Ile-de-France"  # on garde cette région + le télétravail complet
 WTTJ_MAX_PAGES = 4
 
-# Une offre disparaît de la page si elle n'a pas été revue depuis N jours
-KEEP_DAYS = 10
+# Archive : une offre n'est plus affichée "en ligne" si elle n'est plus vue, mais reste dans le tableau
+# (supprimée seulement après N jours sans être revue)
+KEEP_DAYS = 180
+
+# Seuils de pertinence (0-100)
+MIN_STORE_SCORE = 30     # en dessous, l'offre n'est pas conservée du tout
+MIN_MAIL_SCORE = 50      # seules les nouvelles offres au-dessus sont détaillées dans le mail
 # Une offre garde le badge "Nouveau" pendant N jours
 NEW_DAYS = 2
 
