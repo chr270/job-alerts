@@ -60,6 +60,11 @@ def _ft_search(client: httpx.Client, headers: dict, query: str, max_n: int) -> l
             "range": f"{start}-{end}",
         }
         r = client.get(FT_SEARCH_URL, params=params, headers=headers)
+        for wait in (3, 8):  # limite de débit (429) : pause puis nouvelle tentative
+            if r.status_code != 429:
+                break
+            time.sleep(wait)
+            r = client.get(FT_SEARCH_URL, params=params, headers=headers)
         if r.status_code == 204:
             break
         r.raise_for_status()
