@@ -38,6 +38,8 @@ NAMES = [
     "Jaguar Land Rover",
     # Ajouts (avantages salariés, voir fichier grandes entreprises, section 5)
     "Dassault Aviation", "Malakoff Humanis", "Air France-KLM", "ArianeGroup",
+    # Intégrateurs et cabinets CRM / Salesforce (voir plan_carriere_Christopher.md)
+    "SQLI", "Viseo", "Converteo", "Cartelis", "Artefact",
 ]
 
 ALIASES = {

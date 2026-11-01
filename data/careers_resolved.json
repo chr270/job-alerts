@@ -447,7 +447,7 @@
  "Sopra Steria": {
   "url": "https://www.soprasteria.com/careers",
   "primary": false,
-  "blocked": false
+  "blocked": true
  },
  "Atos / Eviden": {
   "url": "https://atos.net/fr/carrieres",
@@ -622,6 +622,31 @@
  "ArianeGroup": {
   "url": "https://www.ariane.group/",
   "primary": false,
+  "blocked": false
+ },
+ "SQLI": {
+  "url": "https://www.sqli.com/int-en/careers/our-jobs",
+  "primary": true,
+  "blocked": false
+ },
+ "Viseo": {
+  "url": "https://www.viseo.com/fr/carrieres",
+  "primary": true,
+  "blocked": false
+ },
+ "Converteo": {
+  "url": "https://www.converteo.com/carrieres/",
+  "primary": true,
+  "blocked": false
+ },
+ "Cartelis": {
+  "url": "https://www.cartelis.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "Artefact": {
+  "url": "https://www.artefact.com/careers/",
+  "primary": true,
   "blocked": false
  },
  "Nestlé France": {

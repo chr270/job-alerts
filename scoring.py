@@ -19,7 +19,7 @@ EXCLUDE_TITLE = re.compile(
 
 # Intitulés cœur de cible (+points). Chaque motif ne compte qu'une fois : on prend le meilleur.
 TITLE_POINTS = [
-    (r"marketing automation|automatisation marketing|sfmc|marketing cloud|eloqua|journey builder", 55),
+    (r"marketing automation|automatisation marketing|sfmc|marketing cloud|eloqua|journey builder|adobe campaign|adobe journey|braze|data cloud", 55),
     (r"\bcrm\b|lifecycle|cycle de vie|fid[ée]lisation|campagnes? (?:e-?mail|marketing|crm)|emailing", 50),
     (r"martech|marketing ops|revops|marketing op[ée]rationnel", 50),
     (r"traffic manager|acquisition|m[ée]dia trafficker|trafficker|growth|\bsea\b|\bseo\b|r[ée]f[ée]rencement|search marketing|paid", 48),
@@ -43,6 +43,7 @@ SENIORITY = [
 KEYWORDS = {
     "SFMC / Marketing Cloud": (r"sfmc|marketing cloud|journey builder|exact ?target", 7),
     "Eloqua": (r"eloqua", 7),
+    "Adobe Campaign / Braze / Data Cloud": (r"adobe campaign|adobe journey|braze|data cloud|ampscript", 5),
     "Salesforce": (r"salesforce", 4),
     "Marketing automation": (r"marketing automation|automatisation marketing|automation", 5),
     "CRM": (r"\bcrm\b", 3),

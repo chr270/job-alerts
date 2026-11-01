@@ -146,6 +146,13 @@ GROUPS = {
         ("Air France-KLM", "https://www.airfrance.com/emploi"),
         ("ArianeGroup", "https://www.ariane.group/fr/carrieres/"),
     ],
+    "Intégrateurs et cabinets CRM / Salesforce": [
+        ("SQLI", "https://www.sqli.com/int-en/careers/our-jobs"),
+        ("Viseo", "https://www.viseo.com/fr/carrieres"),
+        ("Converteo", "https://www.converteo.com/carrieres/"),
+        ("Cartelis", "https://www.cartelis.com/carrieres/"),
+        ("Artefact", "https://www.artefact.com/careers/"),
+    ],
     "Industrie / Biens de consommation": [
         ("Nestlé France", "https://www.nestle.fr/jobs"),
         ("Unilever France", "https://careers.unilever.com/"),
@@ -211,4 +218,9 @@ ALT = {
     "Malakoff Humanis": ["https://www.malakoffhumanis.com/"],
     "Air France-KLM": ["https://www.airfranceklm.com/en/careers", "https://www.airfranceklm.com/", "https://corporate.airfrance.com/"],
     "ArianeGroup": ["https://www.ariane.group/", "https://www.arianegroup.com/"],
+    "SQLI": ["https://www.sqli.com/"],
+    "Viseo": ["https://www.viseo.com/", "https://www.viseo.com/fr"],
+    "Converteo": ["https://www.converteo.com/", "https://converteo.com/"],
+    "Cartelis": ["https://www.cartelis.com/", "https://cartelis.com/"],
+    "Artefact": ["https://www.artefact.com/"],
 }

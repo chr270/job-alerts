@@ -15,6 +15,10 @@ FT_QUERIES = [
     "e-commerce",
     "chef de projet digital",
     "communication digitale",
+    "Marketing Cloud",
+    "Adobe Campaign",
+    "Braze",
+    "consultant CRM",
 ]
 FT_REGION = "11"  # 11 = Île-de-France
 FT_MAX_PER_QUERY = 450
@@ -32,6 +36,9 @@ WTTJ_QUERIES = [
     "SEO",
     "emailing",
     "growth marketing",
+    "Marketing Cloud",
+    "Adobe Campaign",
+    "Braze",
 ]
 WTTJ_STATE = "Ile-de-France"  # on garde cette région + le télétravail complet
 WTTJ_MAX_PAGES = 4
