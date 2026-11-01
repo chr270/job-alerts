@@ -31,6 +31,13 @@ NAMES = [
     "Bouygues Telecom", "SFR", "Iliad", "Canal+", "TF1", "M6", "France Télévisions",
     # Biens de consommation
     "Nestlé", "Unilever", "Procter & Gamble", "PepsiCo", "Coca-Cola", "Ferrero",
+    # Marques automobiles (Renault, Stellantis, Free2Move et Arval sont déjà plus haut)
+    "Dacia", "Alpine", "Mobilize", "Peugeot", "Citroën", "DS Automobiles", "Opel", "Fiat", "Jeep",
+    "Toyota", "Volkswagen Group", "BMW", "Mercedes-Benz", "Ford", "Hyundai", "Kia", "Nissan", "Mazda",
+    "Volvo Cars", "Tesla", "Porsche", "Honda", "Mitsubishi Motors", "Suzuki", "MG Motor", "BYD",
+    "Jaguar Land Rover",
+    # Ajouts (avantages salariés, voir fichier grandes entreprises, section 5)
+    "Dassault Aviation", "Malakoff Humanis", "Air France-KLM", "ArianeGroup",
 ]
 
 ALIASES = {
@@ -53,6 +60,21 @@ ALIASES = {
     "Covéa": r"\bcovea\b|\bmma\b|\bmaaf\b|\bgmf\b",
     "MMA": r"\bmma\b",
     "Atos": r"\batos\b",
+    "Alpine": r"alpine (cars|racing|renault)|^alpine$",
+    "Mobilize": r"mobilize|rci bank",
+    "Toyota": r"toyota|lexus",
+    "Volkswagen Group": r"volkswagen|\bvw\b|\baudi\b|skoda|cupra|\bseat\b",
+    "BMW": r"\bbmw\b|mini france|bmw group",
+    "Mercedes-Benz": r"mercedes",
+    "Ford": r"\bford\b",
+    "Volvo Cars": r"volvo cars?|volvo car",
+    "MG Motor": r"\bmg motor\b|saic motor",
+    "Jaguar Land Rover": r"jaguar|land rover",
+    "Mitsubishi Motors": r"mitsubishi motors",
+    "Stellantis": r"stellantis|\bpsa\b|groupe psa|\bfca\b",
+    "Air France-KLM": r"air france|\bklm\b",
+    "Citroën": r"\bcitroen\b",
+    "DS Automobiles": r"\bds automobiles\b",
 }
 
 

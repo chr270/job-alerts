@@ -445,9 +445,9 @@
   "blocked": false
  },
  "Sopra Steria": {
-  "url": "https://www.soprasteria.fr/carrieres",
-  "primary": true,
-  "blocked": true
+  "url": "https://www.soprasteria.com/careers",
+  "primary": false,
+  "blocked": false
  },
  "Atos / Eviden": {
   "url": "https://atos.net/fr/carrieres",
@@ -502,6 +502,126 @@
  "France Télévisions": {
   "url": "https://recrutement.francetelevisions.fr/",
   "primary": true,
+  "blocked": false
+ },
+ "Renault Group (Renault, Dacia, Alpine, Mobilize)": {
+  "url": "https://www.renaultgroup.com/carrieres/",
+  "primary": true,
+  "blocked": false
+ },
+ "Stellantis (Peugeot, Citroën, DS, Opel, Fiat, Jeep)": {
+  "url": "https://www.stellantis.com/fr/carrieres",
+  "primary": true,
+  "blocked": true
+ },
+ "Toyota / Lexus": {
+  "url": "https://www.toyota.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "Volkswagen Group France (VW, Audi, Škoda, Cupra)": {
+  "url": "https://www.volkswagen.fr/",
+  "primary": false,
+  "blocked": false
+ },
+ "BMW Group France (BMW, Mini)": {
+  "url": "",
+  "primary": false,
+  "blocked": false
+ },
+ "Mercedes-Benz France": {
+  "url": "https://group.mercedes-benz.com/careers/",
+  "primary": true,
+  "blocked": true
+ },
+ "Ford France": {
+  "url": "https://corporate.ford.com/careers.html",
+  "primary": true,
+  "blocked": true
+ },
+ "Hyundai France": {
+  "url": "https://www.hyundai.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "Kia France": {
+  "url": "https://www.kia.com/fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "Nissan France": {
+  "url": "https://www.nissan.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "Mazda France": {
+  "url": "https://www.mazda.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "Volvo Cars France": {
+  "url": "https://www.volvocars.com/intl/careers/",
+  "primary": true,
+  "blocked": true
+ },
+ "Tesla France": {
+  "url": "https://www.tesla.com/careers",
+  "primary": true,
+  "blocked": true
+ },
+ "Porsche France": {
+  "url": "https://jobs.porsche.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Honda France": {
+  "url": "https://www.honda.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "Mitsubishi Motors France": {
+  "url": "https://www.mitsubishi-motors.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "Suzuki France": {
+  "url": "https://www.suzuki.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "MG Motor France": {
+  "url": "https://www.mgmotor.fr/",
+  "primary": true,
+  "blocked": false
+ },
+ "BYD France": {
+  "url": "https://www.byd.com/fr",
+  "primary": true,
+  "blocked": false
+ },
+ "Jaguar Land Rover France": {
+  "url": "https://careers.jaguarlandrover.com/",
+  "primary": true,
+  "blocked": false
+ },
+ "Dassault Aviation": {
+  "url": "https://www.dassault-aviation.com/fr/groupe/carrieres/",
+  "primary": true,
+  "blocked": false
+ },
+ "Malakoff Humanis": {
+  "url": "https://www.malakoffhumanis.com/",
+  "primary": false,
+  "blocked": false
+ },
+ "Air France-KLM": {
+  "url": "https://www.airfranceklm.com/en/careers",
+  "primary": false,
+  "blocked": true
+ },
+ "ArianeGroup": {
+  "url": "https://www.ariane.group/",
+  "primary": false,
   "blocked": false
  },
  "Nestlé France": {
