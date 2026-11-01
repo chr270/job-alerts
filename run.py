@@ -19,6 +19,7 @@ import llm
 import page
 import scoring
 import sources
+import targets
 
 ROOT = Path(__file__).parent
 STATE = ROOT / "data" / "offers.json"
@@ -99,17 +100,24 @@ def main() -> int:
         print("Aucune source disponible, abandon.", file=sys.stderr)
         return 1
 
+    tg = safe(sources.fetch_targets, "Entreprises ciblées") if config.FETCH_TARGETS else []
+
     # 1) Notation de chaque offre (titre + texte) ; on écarte le hors-cible
-    fetched, dropped = [], 0
-    for o in (ft or []) + (wt or []):
+    fetched, dropped, seen_ids = [], 0, set()
+    for o in (ft or []) + (wt or []) + (tg or []):
+        if o["id"] in seen_ids:
+            continue
+        seen_ids.add(o["id"])
         if scoring.excluded(o["title"], o.get("text", ""), o.get("contract", "")):
             dropped += 1
             continue
         s = scoring.score(o["title"], o.get("text", ""), o.get("experience", ""))
-        if s["score"] < config.MIN_STORE_SCORE:
+        o["target"] = targets.match(o["company"])
+        bonus = config.TARGET_BONUS if o["target"] else 0
+        if s["score"] + bonus < config.MIN_STORE_SCORE:
             dropped += 1
             continue
-        o.update(rule_score=s["score"], keywords=s["keywords"], years=s["years"])
+        o.update(rule_score=min(100, s["score"] + bonus), keywords=s["keywords"], years=s["years"])
         fetched.append(o)
 
     # 2) Lecture par Claude (si clé API) des offres prometteuses pas encore relues
@@ -150,7 +158,7 @@ def main() -> int:
         f"Offres en archive : {len(store)} | écartées (hors cible) : {dropped} | nouvelles : {len(new)} "
         f"(pertinentes : {len(pertinent)}) | relues par Claude : {len(reviews)} | première synchro : {first_run}"
     )
-    failed = [n for n, r in (("France Travail", ft), ("WTTJ", wt)) if r is None]
+    failed = [n for n, r in (("France Travail", ft), ("WTTJ", wt), ("Entreprises ciblées", tg)) if r is None]
     if failed:
         print(f"Sources en échec : {failed}", file=sys.stderr)
 

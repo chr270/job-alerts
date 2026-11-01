@@ -43,6 +43,10 @@ KEEP_DAYS = 180
 # Seuils de pertinence (0-100)
 MIN_STORE_SCORE = 30     # en dessous, l'offre n'est pas conservée du tout
 MIN_MAIL_SCORE = 50      # seules les nouvelles offres au-dessus sont détaillées dans le mail
+# Recherche entreprise par entreprise (liste dans targets.py) + bonus de note pour ces entreprises
+FETCH_TARGETS = True
+TARGET_BONUS = 10
+
 # Une offre garde le badge "Nouveau" pendant N jours
 NEW_DAYS = 2
 

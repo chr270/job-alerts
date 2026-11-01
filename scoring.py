@@ -11,7 +11,9 @@ EXCLUDE_TITLE = re.compile(
     r"comptab|commercial|business developer|account executive|\bsdr\b|\bbdr\b|"
     r"\bstage\b|stagiaire|apprenti|directeur|directrice|\bhead of\b|\bvp\b|\bchief\b|"
     r"\bcto\b|\bcmo\b|juridique|\bpaie\b|infirmi|chauffeur|vendeu|conseiller de vente|recrut|"
-    r"graphiste|vid[ée]aste|photograph|r[ée]dacteur|journaliste|community manager",
+    r"graphiste|vid[ée]aste|photograph|r[ée]dacteur|journaliste|community manager|"
+    r"talent acquisition|recrutement|ressources humaines|\brh\b|analyse de cr[ée]dit|sea fire|"
+    r"acheteur|\bachats?\b|\bdirector\b|autorit[ée] technique|logisti|supply chain",
     re.I,
 )
 

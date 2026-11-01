@@ -63,6 +63,16 @@
       <option value="postule">Postulé</option>
       <option value="ecarte">Écartées</option>
     </select>
+    <select id="when" title="Date de publication">
+      <option value="">Toutes dates</option>
+      <option value="1">Dernières 24 h</option>
+      <option value="3">3 derniers jours</option>
+      <option value="7">7 derniers jours</option>
+      <option value="14">14 derniers jours</option>
+      <option value="31">31 derniers jours</option>
+    </select>
+    <label title="Publiée à partir du">Depuis le <input type="date" id="since"></label>
+    <label><input type="checkbox" id="onlytarget"> ⭐ Entreprises ciblées</label>
     <label><input type="checkbox" id="onlynew"> Nouveautés</label>
   </div>
   <div class="sub" style="margin-top:5px">Mis à jour le __UPDATED__ · cliquez sur un titre de colonne pour trier</div>
@@ -83,6 +93,7 @@ const $ = id => document.getElementById(id);
 const days = d => (new Date(TODAY + "T00:00:00") - new Date(d + "T00:00:00")) / 864e5;
 const isNew = o => days(o.first_seen) < NEW_DAYS;
 const isOn = o => o.last_seen === TODAY;
+const pubDate = o => o.published || o.first_seen;
 const KEY = "suivi-offres";
 let mine = {}; try { mine = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
 let sortK = "score", sortDir = -1;
@@ -105,6 +116,9 @@ function render() {
     (!$("ctr").value || o.contract === $("ctr").value) &&
     (!st || (st === "on") === isOn(o)) &&
     (!m || (m === "none" ? !mine[o.id] : mine[o.id] === m)) &&
+    (!$("when").value || days(pubDate(o)) <= +$("when").value) &&
+    (!$("since").value || pubDate(o) >= $("since").value) &&
+    (!$("onlytarget").checked || o.target) &&
     (!$("onlynew").checked || isNew(o)));
   rows.sort((a, b) => {
     const x = a[sortK] ?? "", y = b[sortK] ?? "";
@@ -125,7 +139,7 @@ function render() {
     if (isNew(o)) { const n = document.createElement("span"); n.className = "tag new"; n.textContent = "Nouveau"; t.append(" ", n); }
     if (!isOn(o)) { const n = document.createElement("span"); n.className = "tag"; n.textContent = "archivée"; t.append(" ", n); }
     if (o.note) { const n = document.createElement("div"); n.className = "note"; n.textContent = "🤖 " + o.note; t.appendChild(n); }
-    cell(tr, o.company); cell(tr, o.location); cell(tr, [o.contract, o.remote].filter(Boolean).join(" · "));
+    cell(tr, (o.target ? "⭐ " : "") + o.company); cell(tr, o.location); cell(tr, [o.contract, o.remote].filter(Boolean).join(" · "));
     cell(tr, o.published); cell(tr, o.source);
     const k = cell(tr, "", "kw");
     (o.keywords || []).forEach(w => { const g = document.createElement("span"); g.className = "tag"; g.textContent = w; k.appendChild(g); });
@@ -141,7 +155,7 @@ function render() {
 }
 document.querySelectorAll("th[data-k]").forEach(th => th.addEventListener("click", () => {
   const k = th.dataset.k; if (sortK === k) sortDir = -sortDir; else { sortK = k; sortDir = (k === "score" || k === "published") ? -1 : 1; } render(); }));
-["q","min","src","ctr","stat","mine","onlynew"].forEach(id => $(id).addEventListener("input", render));
+["q","min","src","ctr","stat","mine","when","since","onlytarget","onlynew"].forEach(id => $(id).addEventListener("input", render));
 render();
 </script>
 </body>

@@ -5,7 +5,7 @@ from pathlib import Path
 TEMPLATE = (Path(__file__).parent / "template.html").read_text(encoding="utf-8")
 FIELDS = [
     "id", "source", "title", "company", "location", "contract", "salary", "remote", "published",
-    "url", "snippet", "first_seen", "last_seen", "score", "note", "keywords",
+    "url", "snippet", "first_seen", "last_seen", "score", "note", "keywords", "target",
 ]
 
 
