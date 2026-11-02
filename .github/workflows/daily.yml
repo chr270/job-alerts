@@ -2,7 +2,12 @@ name: Veille quotidienne
 
 on:
   schedule:
-    - cron: "0 5 * * *" # 05:00 UTC = 06:00 ou 07:00 à Paris
+    # GitHub retarde ou saute parfois les lancements programmés, surtout pile à l'heure ronde.
+    # Trois passages décalés, à des minutes creuses : si le premier saute, un suivant rattrape.
+    # Sans risque de doublon : le script ne mail que les offres pas encore en archive.
+    - cron: "17 4 * * *" # 05:17 à Paris l'hiver, 06:17 l'été
+    - cron: "47 5 * * *" # 06:47 l'hiver, 07:47 l'été
+    - cron: "23 8 * * *" # 09:23 l'hiver, 10:23 l'été
   workflow_dispatch: {}
 
 permissions:
