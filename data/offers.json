@@ -10496,5 +10496,29 @@
 "note": "",
 "first_seen": "2026-11-05",
 "last_seen": "2026-11-05"
+},
+"wttj:BT_MNYmm6V": {
+"id": "wttj:BT_MNYmm6V",
+"source": "WTTJ",
+"title": "Chef de produit ICT - IA F/H",
+"company": "Bouygues Telecom",
+"location": "Boulogne-Billancourt",
+"contract": "CDI",
+"salary": "",
+"remote": "",
+"published": "2026-11-05",
+"url": "https://www.welcometothejungle.com/fr/companies/bouygues-telecom/jobs/chef-de-produit-ict-ia-f-h_boulogne-billancourt",
+"snippet": "Description du profil : De formation Bac+5 en Marketing, vous justifiez d'une expérience réussie dans l'IA vous permettant une réelle autonomie sur des missions similaires. Vous maîtrisez les enjeux technologiques et le marché B2B, vous savez gérer vos priorités et respecter les délais sans supervis",
+"target": "Bouygues",
+"rule_score": 44,
+"keywords": [
+"IA"
+],
+"years": null,
+"score": 44,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-05",
+"last_seen": "2026-11-05"
 }
 }
