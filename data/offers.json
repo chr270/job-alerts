@@ -12064,5 +12064,51 @@
 "note": "",
 "first_seen": "2026-11-10",
 "last_seen": "2026-11-10"
+},
+"ft:216GYLH": {
+"id": "ft:216GYLH",
+"source": "France Travail",
+"title": "Chargé de communication digitale et relation voyageurs polyvalent (H/F)",
+"company": "LES CANARDS DE PARIS",
+"location": "75 - Paris 15e Arrondissement",
+"contract": "CDI",
+"salary": "Mensuel de 1940.0 Euros - Primes du dimanche, 13ème mois",
+"remote": "",
+"published": "2026-11-10",
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/216GYLH",
+"snippet": "Présentation de l'entreprise  Les Canards de Paris est une entreprise de tourisme proposant des visites originales de la capitale à bord de bus amphibies, capables de circuler sur route et de naviguer sur la Seine.  Notre équipe à taille humaine se distingue par sa polyvalence, son esprit d'équipe e",
+"target": "",
+"rule_score": 52,
+"keywords": [],
+"years": null,
+"score": 52,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-10",
+"last_seen": "2026-11-10"
+},
+"wttj:NABOO_7qkRO3L": {
+"id": "wttj:NABOO_7qkRO3L",
+"source": "WTTJ",
+"title": "Paid Social Freelance",
+"company": "Naboo",
+"location": "Paris",
+"contract": "CDI",
+"salary": "",
+"remote": "",
+"published": "2026-11-10",
+"url": "https://www.welcometothejungle.com/fr/companies/wome/jobs/paid-social-freelance_paris",
+"snippet": "• Proven experience running Meta and LinkedIn ads for B2B companies, with results measured in pipeline rather than clicks • Experience setting up ad accounts from scratch or restructuring existing ones • Comfortable with conversion tracking (Meta Conversions API, LinkedIn Insight Tag) and a CRM such",
+"target": "",
+"rule_score": 31,
+"keywords": [
+"CRM"
+],
+"years": null,
+"score": 31,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-10",
+"last_seen": "2026-11-10"
 }
 }
