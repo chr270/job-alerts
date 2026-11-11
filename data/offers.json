@@ -12444,5 +12444,63 @@
 "note": "",
 "first_seen": "2026-11-11",
 "last_seen": "2026-11-11"
+},
+"ft:8750689": {
+"id": "ft:8750689",
+"source": "France Travail",
+"title": "Chef de Projet Marketing Digital H/F",
+"company": "Groupe Altaïr",
+"location": "91 - Viry-Châtillon",
+"contract": "CDI",
+"salary": "",
+"remote": "",
+"published": "2026-11-11",
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/8750689",
+"snippet": "Le Groupe Altaïr est un acteur majeur de la distribution et de la réparation automobile en Île-de-France, avec plus de 750 collaborateurs répartis sur plus de 40 sites. Le Groupe représente 8 marques : RENAULT, DACIA, NISSAN, ALPINE, MG MOTOR, OMODA et JAECOO, AVIS et ÉLÉPHANT BLEU.  Depuis juillet ",
+"target": "",
+"rule_score": 70,
+"keywords": [
+"Emailing",
+"SEO",
+"SEA / Ads",
+"Analytics",
+"Reporting / KPI",
+"Gestion de projet",
+"RGPD",
+"IA"
+],
+"years": 2,
+"score": 70,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11"
+},
+"ft:8749915": {
+"id": "ft:8749915",
+"source": "France Travail",
+"title": "Chargé de données produits e-commerce H/F",
+"company": "JOB LINK PARIS",
+"location": "94 - Ivry-sur-Seine",
+"contract": "MIS",
+"salary": "Mensuel de 2500.0 Euros à 2500.0 Euros - .",
+"remote": "",
+"published": "2026-11-11",
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/8749915",
+"snippet": "Vous rejoindrez un acteur majeur de la distribution spécialisée, dont les équipes gèrent chaque jour un large choix de produits pour les consommateurs.  Présentation du poste et description des tâches  Vous aimez rechercher des informations, structurer des données et rendre un produit attractif en q",
+"target": "",
+"rule_score": 68,
+"keywords": [
+"SEO",
+"SEA / Ads",
+"IA",
+"E-commerce"
+],
+"years": 2,
+"score": 68,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11"
 }
 }
