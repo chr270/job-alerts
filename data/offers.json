@@ -14342,5 +14342,54 @@
 "note": "",
 "first_seen": "2026-11-16",
 "last_seen": "2026-11-16"
+},
+"ft:8879856": {
+"id": "ft:8879856",
+"source": "France Travail",
+"title": "CDD Responsable acquisition SEA shopping F/H",
+"company": "Orange SA",
+"location": "94 - Arcueil",
+"contract": "CDD",
+"salary": "",
+"remote": "",
+"published": "2026-11-16",
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/8879856",
+"snippet": "e Au sein d'Orange France, sur le marché Grand Public, la Direction Digital a pour mission de transformer l'expérience digitale de nos clients pour la positionner au niveau des standards d'excellence du marché. Ensemble, nous allons explorer des frontières de la technologie pour offrir des solutions",
+"target": "Orange",
+"rule_score": 49,
+"keywords": [
+"SEA / Ads",
+"E-commerce"
+],
+"years": 2,
+"score": 49,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
+},
+"ft:215XZDT": {
+"id": "ft:215XZDT",
+"source": "France Travail",
+"title": "Chargé(e) de communication digitale (H/F)",
+"company": "",
+"location": "92 - SURESNES",
+"contract": "CDI",
+"salary": "Mensuel de 1867.02 Euros - salaire sur 12 mois",
+"remote": "",
+"published": "2026-11-02",
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/215XZDT",
+"snippet": "Rattaché(e) au vos missions sont les suivantes :  - Présence en ligne et contenus  Mettre à jour le site internet du cabinet : informations pratiques, présentation de l'équipe et des soins. Animer les réseaux sociaux (Instagram, Facebook, LinkedIn) : planning éditorial, création des visuels et des t",
+"target": "",
+"rule_score": 61,
+"keywords": [
+"Emailing"
+],
+"years": 2,
+"score": 61,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-16",
+"last_seen": "2026-11-16"
 }
 }
