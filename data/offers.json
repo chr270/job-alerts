@@ -14973,5 +14973,80 @@
 "note": "",
 "first_seen": "2026-11-17",
 "last_seen": "2026-11-17"
+},
+"ft:216NJPS": {
+"id": "ft:216NJPS",
+"source": "France Travail",
+"title": "Chargé(e) de relation client & trafic digital (H/F) - CDD 6 mois (H/F)",
+"company": "BATIACTU GROUPE",
+"location": "92 - BOULOGNE-BILLANCOURT",
+"contract": "CDD",
+"salary": "Annuel de 29000.0 Euros à 30000.0 Euros",
+"remote": "",
+"published": "2026-11-17",
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/216NJPS",
+"snippet": "Depuis 2001, Batiactu Groupe est un groupe média spécialisé dans l'information et les services destinés aux professionnels de la construction, de l'architecture, de l'immobilier et du cadre de vie. À travers ses différents médias et services, le Groupe accompagne les entreprises et les acteurs majeu",
+"target": "",
+"rule_score": 51,
+"keywords": [
+"Emailing",
+"IA",
+"E-commerce"
+],
+"years": 1,
+"score": 51,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-17",
+"last_seen": "2026-11-17"
+},
+"ft:8922421": {
+"id": "ft:8922421",
+"source": "France Travail",
+"title": "Chef de Projet Process & Méthodes E-commerce (F/H)",
+"company": "",
+"location": "91 - Vert-le-Grand",
+"contract": "CDI",
+"salary": "",
+"remote": "",
+"published": "2026-11-17",
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/8922421",
+"snippet": "Le Groupement Les Mousquetaires, ce sont 7 enseignes de la grande distribution portées haut et fort par plus de 3 000 chefs d'entreprise indépendants ! Ce sont aussi 150 000 collaborateurs mobilisés autour de notre modèle unique de producteurs et commerçants. Et nous en sommes fiers ! Dans toutes le",
+"target": "",
+"rule_score": 54,
+"keywords": [
+"E-commerce"
+],
+"years": 0,
+"score": 54,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-17",
+"last_seen": "2026-11-17"
+},
+"wttj:WI_YqD4R2l": {
+"id": "wttj:WI_YqD4R2l",
+"source": "WTTJ",
+"title": "Traffic Manager – Google Ads, Meta Ads, GA4/GTM (H/F)",
+"company": "We Invest",
+"location": "Jossigny",
+"contract": "CDI",
+"salary": "",
+"remote": "",
+"published": "2026-11-17",
+"url": "https://www.welcometothejungle.com/fr/companies/we-invest-real-estate/jobs/directeur-acquisition-paid-media-100-hands-on-h-f_jossigny",
+"snippet": "* 3 à 5 ans d’expérience en acquisition payante orientée performance * Maîtrise avancée de Google Ads et Meta Ads * Autonomie sur GTM et GA4 (tags, déclencheurs, événements de conversion) * Capacité à expliquer simplement le digital à des entrepreneurs non spécialistes * Un profil doer : rapide, pra",
+"target": "",
+"rule_score": 32,
+"keywords": [
+"SEA / Ads",
+"Analytics"
+],
+"years": 5,
+"score": 32,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-17",
+"last_seen": "2026-11-17"
 }
 }
