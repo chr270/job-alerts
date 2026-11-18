@@ -15383,5 +15383,55 @@
 "note": "",
 "first_seen": "2026-11-18",
 "last_seen": "2026-11-18"
+},
+"ft:8955451": {
+"id": "ft:8955451",
+"source": "France Travail",
+"title": "CDD Chargé de Mécénat et compliance F/H",
+"company": "Orange SA",
+"location": "92 - Issy-les-Moulineaux",
+"contract": "CDD",
+"salary": "",
+"remote": "",
+"published": "2026-11-18",
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/8955451",
+"snippet": "Direction Opérations et Autisme - Fondation d'Entreprise Orange  Le Pôle Mécénat Autisme et Opérations gère les problématiques de compliance, gouvernance et procédures de la Fondation Orange ainsi que les projets de mécénat de l'axe autisme.             Mécénat, éthique et passion : la recette Orang",
+"target": "Orange",
+"rule_score": 38,
+"keywords": [
+"Gestion de projet",
+"IA"
+],
+"years": 2,
+"score": 38,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-18",
+"last_seen": "2026-11-18"
+},
+"ft:216NCLL": {
+"id": "ft:216NCLL",
+"source": "France Travail",
+"title": "Chargé(e) de communication digitale Chine (H/F), Xiaohongshu / We",
+"company": "",
+"location": "75 - PARIS",
+"contract": "CDI",
+"salary": "Mensuel de 1867.02 Euros - primes",
+"remote": "",
+"published": "2026-11-17",
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/216NCLL",
+"snippet": "Chargé(e) de communication digitale Chine (H/F), Xiaohongshu / WeChat / Douyin  Description de l'entreprise Redline Paris est une maison de joaillerie fine fondée en 2005, connue pour ses bracelets diamant sur fil de couleur, fabriqués à la main dans des ateliers parisiens. Entreprise familiale d'un",
+"target": "",
+"rule_score": 64,
+"keywords": [
+"Reporting / KPI",
+"IA"
+],
+"years": 1,
+"score": 64,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-18",
+"last_seen": "2026-11-18"
 }
 }
