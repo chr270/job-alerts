@@ -16199,5 +16199,31 @@
 "note": "",
 "first_seen": "2026-11-20",
 "last_seen": "2026-11-20"
+},
+"ft:216RKGR": {
+"id": "ft:216RKGR",
+"source": "France Travail",
+"title": "Chargé e-commerce (H/F)",
+"company": "REDOX",
+"location": "91 - LES ULIS",
+"contract": "CDI",
+"salary": "Annuel de 38000.0 Euros à 45000.0 Euros - Jusqu'à 10 % de variable sur objectifs",
+"remote": "",
+"published": "2026-11-20",
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/216RKGR",
+"snippet": "Depuis 2010, REDOX conçoit et commercialise des durites silicone pour l'automobile, les utilitaires, les bus et cars, l'agriculture, le ferroviaire, le maritime et l'aviation. Fondée par Sylvain Breton, issu du sport automobile, la marque s'appuie sur 4 usines et compte plus de 30 000 clients. Notre",
+"target": "",
+"rule_score": 48,
+"keywords": [
+"SEA / Ads",
+"Analytics",
+"E-commerce"
+],
+"years": 5,
+"score": 48,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-20",
+"last_seen": "2026-11-20"
 }
 }
