@@ -16984,5 +16984,56 @@
 "note": "",
 "first_seen": "2026-11-23",
 "last_seen": "2026-11-23"
+},
+"wttj:GR_NylXyWl": {
+"id": "wttj:GR_NylXyWl",
+"source": "WTTJ",
+"title": "Chef / Cheffe de Projet CX et Process Digital - H/F/X",
+"company": "Groupe Rocher",
+"location": "Issy Les Moulineaux",
+"contract": "CDD / Temporaire",
+"salary": "",
+"remote": "",
+"published": "2026-11-23",
+"url": "https://www.welcometothejungle.com/fr/companies/groupe-rocher/jobs/chef-cheffe-de-projet-cx-et-process-digital-h-f-x_issy-les-moulineaux",
+"snippet": "Description du profil : Formation & Expérience : De formation supérieure (école de commerce, marketing, digital), vous disposez d’une première expérience en gestion de projet digital, e-commerce ou expérience client. Savoir-faire : Maîtrise de la gestion de projet et de la formalisation de process (",
+"target": "",
+"rule_score": 52,
+"keywords": [
+"Segmentation / scénarios",
+"No-code / automatisation",
+"Gestion de projet",
+"E-commerce"
+],
+"years": null,
+"score": 52,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-23",
+"last_seen": "2026-11-23"
+},
+"wttj:GB_d5mk7Jd": {
+"id": "wttj:GB_d5mk7Jd",
+"source": "WTTJ",
+"title": "CHEF DE PRODUITS MARKETING IARD F/H - CDD - PARIS",
+"company": "Groupe BPCE",
+"location": "Paris-13e-Arrondissement",
+"contract": "CDD / Temporaire",
+"salary": "",
+"remote": "",
+"published": "2026-11-23",
+"url": "https://www.welcometothejungle.com/fr/companies/groupe-bpce/jobs/chef-de-produits-marketing-iard-f-h-cdd-paris_paris-13e-arrondissement",
+"snippet": "Votre Profil : Vous êtes titulaire d'une formation supérieure de niveau Bac+4/5, idéalement en école de commerce. Vous appréciez les environnements transverses et savez faire avancer des projets en coordonnant des interlocuteurs variés. Compétences Techniques : - Techniques d'analyse marketing et co",
+"target": "BPCE",
+"rule_score": 40,
+"keywords": [
+"Gestion de projet"
+],
+"years": null,
+"score": 40,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-23",
+"last_seen": "2026-11-23"
 }
 }
