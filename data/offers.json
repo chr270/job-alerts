@@ -19297,5 +19297,31 @@
 "note": "",
 "first_seen": "2026-11-27",
 "last_seen": "2026-11-27"
+},
+"ft:216YVWQ": {
+"id": "ft:216YVWQ",
+"source": "France Travail",
+"title": "Expert CRM (H/F)",
+"company": "E-KENT",
+"location": "92 - Antony",
+"contract": "CDI",
+"salary": "Annuel de 60000.0 Euros à 70000.0 Euros",
+"remote": "",
+"published": "2026-11-27",
+"url": "https://candidat.francetravail.fr/offres/recherche/detail/216YVWQ",
+"snippet": "Notre client, acteur international du secteur pharmaceutique, renforce son équipe IT et recherche un Salesforce Administrator / Expert CRM pour assurer l'administration, le support et l'évolution de son écosystème CRM. Au sein d'une équipe à l'interface entre les métiers, l'IT et les partenaires ext",
+"target": "",
+"rule_score": 30,
+"keywords": [
+"Salesforce",
+"CRM",
+"Segmentation / scénarios"
+],
+"years": 5,
+"score": 30,
+"ai": null,
+"note": "",
+"first_seen": "2026-11-27",
+"last_seen": "2026-11-27"
 }
 }
